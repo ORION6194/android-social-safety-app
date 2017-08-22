@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sadtech.socialsafety">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeScreenActivity" />
+
+        <service
+            android:name=".BgService"
+            android:enabled="true">
+            <intent-filter android:label="@string/app_name" android:icon="@drawable/logo">
+                <action android:name="com.sadtech.socialsafety.MY_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".GPSTracker"
+            android:enabled="true">
+
+        </service>
+
+        <activity android:name=".SettingsScreenActivity" />
+        <activity android:name=".AddPhoneNumberActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".RegistrationActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".InstructionsActivity"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ae0dcc70fb251591582d7f994c1421d8cdc65ccd" />
+    </application>
+
+</manifest>

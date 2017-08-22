@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Social Safety</string>
+    <string name="help">Please follow the below steps to setup your account:\n\n\n\t1:Register Your Phone Number.\n\t2:Register Your Guardian Numbers.\n\t3:Always maintain working internet connection.\n\t4:SHAKE your phone in case of emergency to alert your guardians.\n\t\n\n\n\n\tLETS START NOW!</string>
+</resources>

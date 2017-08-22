@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.sadtech.socialsafety.SettingsScreenActivity">
+
+    <Button
+        android:id="@+id/btn_r"
+        android:background="@android:drawable/btn_default"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Register"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_apn"
+        android:background="@android:drawable/btn_default"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Add Emergency Contacts"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_i"
+        android:background="@android:drawable/btn_default"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Instructions"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
